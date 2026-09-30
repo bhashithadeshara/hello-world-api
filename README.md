@@ -1,6 +1,6 @@
 # hello-world-api
 
-Small Spring Boot service with one endpoint (not implemented yet):
+Small Spring Boot service with one endpoint:
 
 ```
 GET /hello-world?name=alice
@@ -12,18 +12,17 @@ GET /hello-world?name=alice
 
 ## Run
 
-Needs JDK 17+ and Maven (or use the included wrapper).
+Needs JDK 17+ and Maven.
 
 ```
-./mvnw spring-boot:run
+mvn spring-boot:run
+curl "http://localhost:8080/hello-world?name=alice"
 ```
-
-The app starts on port 8080.
 
 ## Test
 
 ```
-./mvnw test
+mvn test
 ```
 
 ## Assumptions
